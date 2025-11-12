@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
@@ -74,14 +75,14 @@ fun Home(
                         )
                     )
                 }
-                items(items) { item ->
-                    Column(
-                        modifier = Modifier.padding(vertical = 4.dp).fillMaxSize(),
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
-                        Text(text = item)
-                    }
-                }
+            }
+        }
+        items(items) { item ->
+            Column(
+                modifier = Modifier.padding(vertical = 4.dp).fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ){
+                Text(text = item)
             }
         }
     }

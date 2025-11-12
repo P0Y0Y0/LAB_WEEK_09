@@ -50,7 +50,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-    implementation("androidx.compose.materiaal3:material3:1.1.2")
+    implementation("androidx.compose.material3:material3:1.1.2")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

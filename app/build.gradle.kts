@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.material3)
 
     implementation("androidx.compose.material3:material3:1.1.2")
+    implementation(libs.ui.graphics)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
